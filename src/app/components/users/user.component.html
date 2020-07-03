@@ -1,0 +1,68 @@
+<mat-expansion-panel expanded="0">
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      GitHub Users
+    </mat-panel-title>
+  </mat-expansion-panel-header>
+
+  <form class="example-form" [formGroup]="userForm">
+
+    <table class="example-full-width" cellspacing="0">
+      <tr>
+        <td colspan="2">
+          <mat-form-field class="example-full-width">
+            <mat-label>User name</mat-label>
+            <input matInput  formControlName="username" (focusout)="onUsernameChange($event)">
+          </mat-form-field>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <mat-form-field class="example-full-width">
+            <mat-label>Name</mat-label>
+            <input matInput formControlName="name" >
+          </mat-form-field>
+        </td>
+        <td>
+          <mat-form-field class="example-full-width">
+            <mat-label>Bio</mat-label>
+            <input matInput formControlName="bio" >
+          </mat-form-field>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <mat-form-field class="example-full-width">
+            <mat-label>Public repos</mat-label>
+            <input matInput formControlName="public_repos" >
+          </mat-form-field>
+        </td>
+        <td>
+          <mat-form-field class="example-full-width">
+            <mat-label>Company</mat-label>
+            <input matInput formControlName="company" >
+          </mat-form-field>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <mat-form-field class="example-full-width">
+            <mat-label>Location</mat-label>
+            <input matInput formControlName="location" >
+          </mat-form-field>
+        </td>
+        <td>
+          <mat-form-field class="example-full-width">
+            <mat-label>Blog</mat-label>
+            <input matInput formControlName="blog" >
+          </mat-form-field>
+        </td>
+      </tr>
+    </table>
+    <button mat-raised-button  (click)="navigateToShortenerUrl()">Réduire un URL</button>
+  </form>
+
+</mat-expansion-panel>
+    
+    
+    
